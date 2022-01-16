@@ -27,27 +27,27 @@
 1. Insert in a Row (**one row**)  
 ` db.content.insert({'Key': 'object'}) `
 
-eg:  db.content.insert({  
-    'name': 'Singh',   
-    'title':'js made easy'  
-    'language':'javaScript',   
-})  
+>eg:  db.content.insert({  
+>    'name': 'Singh',   
+>    'title':'js made easy'  
+>    'language':'javaScript',   
+>})  
 
 1. Insert in a Row (**Many row**)  
 ` db.content.insert([ {'Key': 'object'}, {'Key': 'object'} ]) `  
 
-eg: db.content.insertMany([  
-    {  
-        'name': 'Rohan',   
-        'title': 'C++ made easy',  
-        'language': 'C++'  
-    },  
-    {  
-        'name': 'Sunny',   
-        'language':'Python',   
-        'title':'python made easy'  
-    }  
-])  
+>eg: db.content.insertMany([  
+>    {  
+>        'name': 'Rohan',   
+>        'title': 'C++ made easy',  
+>        'language': 'C++'  
+>    },  
+>    {  
+>        'name': 'Sunny',   
+>        'language':'Python',   
+>        'title':'python made easy'  
+>    }  
+>])  
 
 3. Show all Rows in a collection  
 ` db.content.find() `
