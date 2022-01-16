@@ -57,9 +57,9 @@ eg: db.content.insertMany([
 
 
 # More command operation
-1. Search in database  
+1. Search in database    
 ` db.content.find({title:'python made easy'}) `  
 
-2. Limit number of Rows while showing output  
+2. Limit number of Rows while showing output   
 ` db.content.find().pretty().limit(n) `  
 > Here in limit(n) n can be any integer
