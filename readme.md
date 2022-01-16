@@ -57,9 +57,26 @@ eg: db.content.insertMany([
 
 
 # More command operation
-1. Search in database    
+1. Search in database  
 ` db.content.find({title:'python made easy'}) `  
 
-2. Limit number of Rows while showing output   
+2. Search in database (**only first matching row**)  
+` db.content.findOne({name:'Rohan'}) `  
+
+2. Limit number of Rows while showing output  
 ` db.content.find().pretty().limit(n) `  
 > Here in limit(n) n can be any integer
+
+3. Deleting Row in a database  
+` db.content.remove({name: 'Sunny'}) `
+
+4. counting number of rows in a collection  
+` db.content.find().count() `
+
+5. updating in a Row   
+` db.comments.update({name: 'Singh'}, {'name': 'Rohan', 'language': 'JavaScript', title: 'c++ made easy'}, {upsert: true}) `  
+
+6. Sorting Rows  
+` db.content.find().sort({key}:1}) `
+
+
